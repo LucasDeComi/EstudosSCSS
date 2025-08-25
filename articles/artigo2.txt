@@ -1,0 +1,94 @@
+SCSS: Funcionalidades básicas e utilização.
+Este artigo tem como objetivo ensinar a utilizar o SCSS da melhor forma e apresentar funcionalidades úteis da linguagem.
+
+O SCSS possui diversas funcionalidades que facilitam o processo de estilização dos desenvolvedores web. As mais simples são muito práticas e fáceis de manipular.
+
+Abaixo, falaremos das funcionalidades mais comuns do SCSS:
+
+1. Declaração e manipulação de variáveis
+Por mais que haja variáveis no CSS, elas se tornam muito mais versáteis no SCSS. Veja alguns usos delas:
+
+Declaração: A declaração de variáveis no SCSS se torna muito mais intuitiva. Veja uma comparação do CSS para o SCSS:
+css:
+:root {
+    --cor: #D0649C;
+    --numero: 10;
+}
+scss:
+$cor: #D0649C;
+$numero: 10;
+
+Utilização Comum: Assim como no CSS, as variáveis do SCSS são utilizadas de forma convencional, mas com uma sintaxe mais simples. Veja nos exemplos abaixo a comparação:
+css:
+:root {
+    --cor: #D0649C
+}
+body {
+    background: var(--cor);
+}
+scss:
+$cor: #D0649C
+body {
+    background: $cor;
+}
+
+Operações Matemáticas: Algo exclusivo do SCSS é a possibilidade de fazer operações matemáticas, não só com variáveis, mas como com qualquer número.
+$numero: 10;
+body {
+    padding: $numero * 2;
+    font-size: 5 * 1px;
+}
+
+Interpolação: Refere-se ao uso de variáveis em nome de classes ou propriedades. Podemos fazer isso com a sintaxe #{$variavel}, como no exemplo abaixo:
+$numero: 1;
+.classe-#{$numero} {
+    font-size: #{$numero}px;
+}
+
+2. Aninhamento
+Diferente do CSS, onde temos que especificar o caminho de cada objeto, no SCSS, podemos aninhar estes objetos, o que é muito mais prático, economiza espaço de código e o torna muito mais compreensível.
+Na prática, isto soa um pouco confuso. Por isso, fica muito mais fácil demonstrar com exemplos e comparações, como as presentes abaixo:
+css:
+div {
+    margin: 10px;
+}
+div span {
+    width: 100%;
+    height: 5px;
+    background-color: #D0649C;
+}
+div.classe {
+    padding: 5px;
+}
+div:hover {
+    background-color: #1A1A1A;
+}
+scss:
+div{
+    margin: 10px;
+    span {
+        width: 100%;
+        height: 5px;
+        background-color: #D0649C;
+    }
+    &.classe {
+        padding: 5px;
+    }
+    &:hover {
+        background-color: #1A1A1A;
+    }
+}
+Como você pode perceber, para elementos 'filhos' da div, tal como span, apenas o adicionamos dentro de div. Agora, para propriedades ou atribuição de classes, precisamos nos referir à div, utilizando, neste caso, a letra '&'.
+
+Herança
+Quando falamos de herança, estamos nos referindo a reaproveitarmos as propriedades de um objeto para algum outro objeto.
+É possível fazer isto utilizando o seletor @extend. Veja só um exemplo:
+.botao {
+    padding: 20px;
+    font-size: 3rem;
+}
+.selecionado {
+    @extend .botao;
+    margin: 10px;
+}
+Neste caso, a classe .selecionado recebe as mesmas propriedades de .botao, além de suas propriedades exclusivas.
