@@ -1,0 +1,43 @@
+Como instalar e compilar o SCSS?
+Aprenda, neste artigo, a realizar a instalação e configuração completas para utilizar o SCSS em seu projeto web.
+
+Para fazer o uso do SCSS, é necessário instalar o Sass em sua máquina. Porém, para a própria instalação do Sass, há outros passos a serem realizados antes.
+
+1. Instalar o Node.js
+Dentre as diversas funcionalidades do Node.js, uma delas é rodar o compilador do Sass. Portanto, é essencial ter a tecnologia instalada para começar a utilizar o SCSS.
+Você pode baixar o Node.js neste link.
+Após o download do instalador, fazemos a instalação padrão da tecnologia. E depois, é recomendado checar se o Node.js foi realmente instalado.
+Para fazer a checagem, digitamos no terminal:
+•   node -v
+•   npm -v
+Isto deve fazer aparecer as versões, respectivamente, do Node.js e do npm (ferramenta gerenciadora das bibliotecas e ferramentas do Node.js).
+
+2. Instalar o Sass
+Este passo é a própria instalação do Sass. Nós o instalamos via npm.
+Para isto, abra o terminal e digite:
+•   npm install -g sass
+Feitos os passos, o Sass está instalado no seu computador. Para fazer a checagem, digite no terminal:
+•   sass --version
+Caso a versão da tecnologia apareça, o Sass foi instalado com sucesso e está pronto para uso.
+
+3. Compilar o SCSS
+Por fim, agora faremos a utilização do SCSS. Você já deve ter a estrutura do seu projeto pronta e um arquivo .scss. Geralmente, criamos dois diretórios css e scss para dividir os arquivos, como na imagem abaixo:
+Com o seu arquivo .scss criado, abra o terminal e digite o comando:
+•   sass --watch scss:css
+No comando acima, 'scss' equivale ao caminho até seu arquivo .scss, e o mesmo vale para o arquivo .css, ele existindo ou não. Caso ele ainda não tenha sido criado, isto será feito automaticamente com o watch.
+Veja abaixo um exemplo mais prático:
+•   sass --watch scss/style.scss:css/style.css
+Desta forma, cada alteração feita no arquivo .scss será compilada para CSS e digitada no arquivo .css. Caso queira parar isto, aperte Ctrl + C no terminal.
+
+4. Dica: Facilitar o processo de "watch"
+O comando do watch pode ser confuso para muitas pessoas e, de toda forma, é ineficiente escrever o comando toda vez que for fazer alterações na estilização.
+Por outro lado, é possível criar um arquivo package.json na raiz do seu projeto. Nele, você vai definir um comando alternativo para fazer o watch.
+Escreva no arquivo:
+{
+    "scripts": {
+        "sass": "sass --watch scss:css"
+    }
+}
+Desta forma, o programa entende que "sass" vai realizar o mesmo que "sass --watch scss:css". Para rodar o comando, digite, no terminal:
+•   npm run sass
+É claro que o comando pode ser nomeado com qualquer nome. Além disso, podemos fazer isto com qualquer comando de terminal, o que torna esta funcionalidade do Node.js muito eficiente.
