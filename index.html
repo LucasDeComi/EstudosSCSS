@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/assets/css/style.css">  
-    <link rel="icon" href="./src/assets/icon.png"> 
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="icon" href="./src/assets/icon.png">
     <title>Estudos SCSS</title>
 </head>
 <body>
@@ -12,10 +12,11 @@
         <div class="screenMode">
             <span></span>
         </div>
-        <h1><a href="index.html"><img class="titleImg" alt="imagem do título" src="./src/assets/lightLogo.webp"></a></h1>
+        <h1><a href="index.html"><img class="titleImg" alt="imagem do título" src="./src/assets/lightLogo.webp"></a>
+        </h1>
         <nav>
             <ul>
-                <li><a href="#">SOBRE NÓS</a></li> 
+                <li><a href="#">SOBRE NÓS</a></li>
                 <li><a href="#">ARTIGOS</a></li>
                 <li><a href="#footer">CONTATO</a></li>
             </ul>
@@ -23,28 +24,115 @@
     </header>
     <aside>
         <ul>
-            
+            <li><a href="#introducao">Introdução ao projeto</a></li>
+            <li><a href="#definicao">O que é o SCSS?</a></li>
+            <li><a href="#utilidades">Utilidades do SCSS</a></li>
+            <li><a href="#participantes">Participantes do projeto</a></li>
         </ul>
     </aside>
     <main>
-        
+        <section id="introducao">
+            <h2>Bem-vindo ao site de anotações e documentação do SCSS!</h2>
+            <p>Esta página tem como objetivo documentar a linguagem e facilitar o seu aprendizado e desenvolvimento.</p>
+        </section>
+        <section id="definicao">
+            <h3>O que é SCSS?</h3>
+            <p>O SCSS é uma linguagem de estilização em projetos web. A sua função é trabalhar e facilitar o processo de estilização de um site, tornando possíveis:</p>
+            <ul id="utilidades">
+                <li>O aninhamento de tags, classes, identificadores, atributos e comportamentos;</li>
+                <li>Criação de funções para atribuição de parâmetros;</li>
+                <li>Manipulação mais ampla de variáveis;</li>
+                <li>Outras diversas funcionalidades presentes <a href="#">nos artigos abaixo.</a></li>
+            </ul>
+            <p>Nós utilizamos o SCSS para agilizar e facilitar o processo de estilização, tornando o entendimento e o
+                visual da folha de estilo muito mais claros. É altamente recomendável utilizá-lo em projetos de grande
+                escala para aprimorar o seu andamento.</p>
+            <p>A linguagem necessita de ser compilada em CSS para funcionar no projeto, pois ela não é lida normalmente
+                na web. Veja o processo completo de instalação <a href="#">neste artigo.</a></p>
+        </section>
+        <section id="participantes">
+            <article>
+                <div class="foto-perfil">
+                    <div id="lucas"></div>
+                </div>
+                <div class="descricao-participante">
+                    <h4 class="nome">Lucas de Comi Côrte</h4>
+                    <h5 class="participacao">Fullstack - Coordenador - Design</h5>
+                    <p>Estudante de Desenvolvimento de Sistemas, 1o Ano do Ensino Médio</p>
+                </div>
+                <div class="redes">
+                    <a class="link-linkedin" href="https://www.linkedin.com/in/lucas-de-comi-côrte-7090ba363" target="_blank"><img src="./src/assets/linkedin.webp" alt="LinkedIn"></a>
+                    <a class="link-github" href="https://github.com/LucasDeComi" target="_blank"><img src="./src/assets/github.webp" alt="GitHub"></a>
+                </div>
+            </article>
+            <article>
+                <div class="foto-perfil">
+                    <div id="tirso"></div>
+                </div>
+                <div class="descricao-participante">
+                    <h4 class="nome">João Pedro Tirso</h4>
+                    <h5 class="participacao">Backend - HTML - JavaScript</h5>
+                    <p>Estudante de Desenvolvimento de Sistemas, 1o Ano do Ensino Médio</p>
+                </div>
+                <div class="redes">
+                    <a class="link-linkedin" href="https://www.linkedin.com/in/jp-tirso-844859380" target="_blank"><img src="./src/assets/linkedin.webp" alt="LinkedIn"></a>
+                    <a class="link-github" href="https://github.com/JPTirso" target="_blank"><img src="./src/assets/github.webp" alt="GitHub"></a>
+                </div>
+                
+            </article>
+            <article>
+                <div class="foto-perfil">
+                    <div id="lorena"></div>
+                </div>
+                <div class="descricao-participante">
+                    <h4 class="nome">Lorena Correia da Silva</h4>
+                    <h5 class="participacao">Frontend - Estilização - Design</h5>
+                    <p>Estudante de Desenvolvimento de Sistemas, 1o Ano do Ensino Médio</p>
+                </div>
+                <div class="redes">
+                    <a class="link-linkedin" href="#" target="_blank"><img src="./src/assets/linkedin.webp" alt="LinkedIn"></a>
+                    <a class="link-github" href="https://github.com/lohkk-exe" target="_blank"><img src="./src/assets/github.webp" alt="GitHub"></a>
+                </div>
+            </article>
+            <article>
+                <div class="foto-perfil">
+                    <div id=" matheus"></div>
+                </div>
+                <div class="descricao-participante">
+                    <h4 class="nome">Matheus do Nacimento Alves Barreto</h4>
+                    <h5 class="participacao">Backend - JavaScript</h5>
+                    <p>Estudante de Desenvolvimento de Sistemas, 1o Ano do Ensino Médio</p>
+                </div>
+                <div class="redes">
+                    <a class="link-linkedin" href="https://www.linkedin.com/in/matheus-do-nascimento-alves-barreto-6aaa26278" target="_blank"><img src="./src/assets/linkedin.webp" alt="LinkedIn"></a>
+                    <a class="link-github" href="https://github.com/Kaisernbt" target="_blank"><img src="./src/assets/github.webp" alt="GitHub"></a>
+                </div>
+            </article>
+        </section>
     </main>
     <footer id="footer">
         <section class="linkedin">
             <h4>Linkedin</h4>
             <ul>
-                     
+                <li><a href="https://www.linkedin.com/in/lucas-de-comi-côrte-7090ba363" target="_blank">Lucas</a></li>
+                <li><a href="https://www.linkedin.com/in/jp-tirso-844859380" target="_blank">João P.</a></li>
+                <li><a href="#" target="_blank">Lorena C.</a></li>
+                <li><a href="https://www.linkedin.com/in/matheus-do-nascimento-alves-barreto-6aaa26278" target="_blank">Matheus</a></li>
             </ul>
         </section>
         <section class="github">
-           <h4>Github</h4>
-           <ul>
-               
-           </ul>
+            <h4>Github</h4>
+            <ul>
+                <li><a href="https://github.com/LucasDeComi" target="_blank">Lucas</a></li>
+                <li><a href="https://github.com/JPTirso" target="_blank">João P.</a></li>
+                <li><a href="https://github.com/lohkk-exe" target="_blank">Lorena C.</a></li>
+                <li><a href="https://github.com/Kaisernbt" target="_blank">Matheus</a></li>
+            </ul>
         </section>
         <section class="copyright">
             <h6>&copy;2025. Todos os direitos reservados</h6>
         </section>
     </footer>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
