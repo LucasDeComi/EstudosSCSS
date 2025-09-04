@@ -1,0 +1,94 @@
+Mixin: Tornando o seu código mais compacto
+
+Durante o desenvolvimento, muitas repetições de atributos acontecem na estilização. Porém, isto pode ser otimizado com o mixin, que serve como um 'bloco de repetição' para o seu código.
+Na prática, o que o mixin faz de verdade é retornar blocos de CSS, ou seja, propriedades, seletores e regras. O mixin serve para compactar o código, armazenando valores que seriam utilizados diversas vezes no seu código.
+
+Sintaxe básica
+A parte fundamental do mixin começa com o nome do mixin, antecedido por "@mixin". Entre chaves, todas as propriedades necessárias serão escritas. Para utilizar as propriedades do mixin no seu objeto, escreva o nome do mixin, antecedido por @include.
+Veja um exemplo prático e simples do uso do mixin:
+scss:
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elemento {
+  @include flex;
+}
+
+Propriedades mais avançadas do mixin
+O mixin é, com suas capacidades básicas, muito útil. Porém, existem outras diversas funcionalidades dele.
+
+1. Uso de parâmetros
+O mixin pode receber parâmetros. Isto o torna muito mais dinâmico e também torna possível aproveitar o bloco de código para muito mais ocasiões. Colocamos os parâmetros entre parenteses, como no exemplo abaixo:
+scss:
+@mixin fonte($tamanho, $peso) {
+  font-size: $tamanho;
+  font-weight: $peso;
+}
+h1 {
+  @include fonte(32px, bold);
+}
+p {
+  @include fonte(16px, regular);
+}
+Podemos ver que, no mixin, há os parâmetros (variáveis) entre parênteses, como se fosse uma função/método na programação.
+
+2. Condicionais
+Para atender a ainda mais ocasiões, podemos utilizar as condicionais no @mixin, tal como no exemplo abaixo:
+scss:
+@mixin formato-fonte($tamanho) {
+    @if $tamanho < 16 {
+        font-size: $tamanho * 1rem;
+    }
+    @else {
+        font-size: $tamanho * 1px;
+    }
+}
+Como mostrado acima, chamamos a condicional por @if e, caso a condicional não atenda às necessidades, podemos chamar um caso contrário com @else.
+
+3. Responsividade
+Às vezes, certos objetos precisam de uma responsividade específica. Por isso, junto das outras funcionalidades do mixin, é possível tornar um objeto propriamente responsivo. Veja um exemplo:
+scss:
+@mixin responsividade($tamanho) {
+    @media(max-width: $tamanho) {
+        @content;
+    }
+}
+.elemento {
+    font-size: 1.5rem;
+    @include responsividade(600px) {
+        font-size: 1rem;
+    }
+}
+
+Comparação do mixin com o extend
+Enquanto o mixin copia o código no local em que ele é chamado, o extend funciona como uma herança de outro objeto.
+Mixin:
+scss:
+@mixin estrutura {
+    width: 100px;
+    height: 50px;
+}
+.quadro {
+    background-color: red;
+    @include estrutura;
+}
+.frame {
+    background-color: blue;
+    @include estrutura;
+}
+Extend:
+scss:
+.botao {
+    width: 50px;
+    height: 20px;
+    background-color: red;
+}
+.link {
+    border-radius: 20px;
+    @extend .botao;
+}
+
+Boas práticas
+O ideal é utilizar o mixin, principalmente, para padrões repetitivos, como layout, responsividade ou itens de navegador. Porém, como visto anteriormente, o mixin é uma funcionalidade muito flexível. De toda forma, nem sempre ele é a melhor solução para certas ocasiões, que, em certos casos, possuem formas mais simples de serem solucionadas.
