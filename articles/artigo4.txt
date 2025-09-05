@@ -1,0 +1,13 @@
+Como o SCSS pode ser dividido e organizado em vários arquivos?
+
+Vários sites precisam de uma estilização muito grande. Isto pode ser desorganizado e difícil de administrar futuramente. Com o SCSS, podemos dividir o arquivo em vários arquivos menores. Isto facilita o processo de estilização, pois conseguimos pesquisar melhor por partes específicas do código
+
+Imagine um exemplo: Para fazer a estilização do header de uma página, precisamos de muitos detalhes e um modelo responsivo. Isto, junto de todas as outras partes do código, ficaria desorganizado e ineficaz de procurar.
+Portanto, criamos um arquivo somente para o estilo do header. Todo arquivo deste tipo deve começar com '_'. Por exemplo: _header.scss. Desta forma, a linguagem entende que este arquivo será importado para um código principal.
+Realizamos a importação no código principal, desta forma:
+scss:
+@import './header';
+
+Note que descartamos a extensão .scss e o '_', pois se torna desnecessário neste cenário.
+
+O código pode ter quantas importações forem preciso. Vale lembrar que, para o funcionamento do código, o watch tem que estar ativo durante o processo. Veja mais sobre o watch e a instalação do SCSS neste artigo.

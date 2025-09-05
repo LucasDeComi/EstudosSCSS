@@ -18,7 +18,7 @@ Mixin: Tornando o seu código mais compacto
 Neste artigo, será ensinado o mixin, um recurso do SCSS que serve como bloco de repetição, assim compactando bastante o seu código.
 
 Como o SCSS pode ser dividido e organizado em vários arquivos?
-O SCSS tem uma funcionalidade de criar vários arquivos para dividir uma estilização em “pedaços menores”, compilando tudo em um arquivo final, para facilitar organização.
+O SCSS tem uma funcionalidade de criar vários arquivos para dividir uma estilização em arquivos menores, compilando tudo em um arquivo final, para facilitar organização.
 
 Funções e programação no SCSS
 A linguagem SCSS torna possível criar funções, como em linguagens de programação. Isso permite que algum atributo receba um valor de acordo com as suas especificações.
