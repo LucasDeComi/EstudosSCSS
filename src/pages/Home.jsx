@@ -1,6 +1,7 @@
 import { Link, Element } from 'react-scroll';
 import Header from '../components/layout/Header';
 import Participante from '../components/ui/Participante';
+import Footer from '../components/layout/Footer';
 
 function Home() {
     return (
