@@ -8,9 +8,15 @@ function Header() {
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#">SOBRE NÓS</a></li>
-                    <li><a href="#">ARTIGOS</a></li>
-                    <li><a href="#footer">CONTATO</a></li>
+                    <li>
+                        SOBRE NÓS
+                    </li>
+                    <li>
+                        ARTIGOS
+                    </li>
+                    <li>
+                        CONTATO
+                    </li>
                 </ul>
             </nav>
         </header>
