@@ -51,7 +51,7 @@ function Home() {
                     </section>
                 </Element>
                 <Element name="participantes">
-                    <section>
+                    <section id="participantes">
                         <h3>Participantes do projeto</h3>
                         <Participante
                             nome="Lucas de Comi Côrte"

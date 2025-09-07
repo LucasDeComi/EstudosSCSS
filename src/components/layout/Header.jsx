@@ -1,3 +1,6 @@
+import { HashLink } from 'react-router-hash-link';
+import { Link as ScrollLink } from 'react-scroll';
+
 function Header() {
     return (
         <header>
@@ -9,13 +12,13 @@ function Header() {
             <nav>
                 <ul>
                     <li>
-                        SOBRE NÓS
+                        <HashLink to="/#participantes" smooth={true} duration={500}>SOBRE NÓS</HashLink>
                     </li>
                     <li>
-                        ARTIGOS
+                        <ScrollLink to="artigos" smooth={true} duration={500}>ARTIGOS</ScrollLink>
                     </li>
                     <li>
-                        CONTATO
+                        <ScrollLink to="footer" smooth={true} duration={500}>CONTATO</ScrollLink>
                     </li>
                 </ul>
             </nav>
