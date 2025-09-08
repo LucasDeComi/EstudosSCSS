@@ -20,4 +20,13 @@ aside {
             text-decoration: underline;
         }
     }
+    &.dark {
+        background-color: $dark-secondary;
+        li {
+            color: $light-secondary;
+            &:hover {
+                background-color: $dark-bg;
+            }
+        }
+    }
 }

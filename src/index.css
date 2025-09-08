@@ -107,6 +107,15 @@ aside li:hover {
   border-radius: 8px;
   text-decoration: underline;
 }
+aside.dark {
+  background-color: #1e1e1e;
+}
+aside.dark li {
+  color: #e5e5e5;
+}
+aside.dark li:hover {
+  background-color: #252525;
+}
 
 * {
   padding: 0;
