@@ -1,5 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d0649c;
+  height: 64px;
+  padding: 10px 20px;
+  align-items: center;
+}
+header .screen-mode {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #f5f5f5;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+}
+header .screen-mode span {
+  display: flex;
+  background-color: #d0649c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+header .screen-mode:hover {
+  cursor: pointer;
+  background-color: #e5e5e5;
+}
+header .screen-mode:hover span {
+  scale: 1.05;
+}
+header .screen-mode:active {
+  background-color: #f5f5f5;
+}
+header h1 {
+  display: inline-block;
+  background-image: url("../../public/assets/lightLogo.webp");
+  width: 65px;
+  height: 50px;
+  margin-left: 10rem;
+  background-size: contain;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin-left: 10px;
+  color: #f5f5f5;
+  list-style: none;
+  font-weight: 600;
+}
+header ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 * {
   padding: 0;
   margin: 0;

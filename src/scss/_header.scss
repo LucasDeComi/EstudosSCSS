@@ -1,0 +1,58 @@
+@import 'variables';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $light-primary;
+    height: 64px;
+    padding: 10px 20px;
+    align-items: center;
+    .screen-mode {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        background-color: $light-bg;
+        width: 80px;
+        height: 40px;
+        border-radius: 50px;
+        span {
+            display: flex;
+            background-color: $light-primary;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: .5s;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: $light-secondary;
+            span {
+                scale: 1.05;
+            }
+        }
+        &:active {
+            background-color: $light-bg;
+        }
+    }
+    h1 {
+        display: inline-block;
+        background-image: url('../../public/assets/lightLogo.webp');
+        width: 65px;
+        height: 50px;
+        margin-left: 10rem;
+        background-size: contain;
+    }
+    ul {
+        display: flex;
+        li {
+            margin-left: 10px;
+            color: $light-bg;
+            list-style: none;
+            font-weight: 600;
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}

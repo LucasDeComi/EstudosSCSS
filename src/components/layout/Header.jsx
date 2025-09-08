@@ -1,11 +1,10 @@
 function Header() {
     return (
         <header>
-            <div className="screenMode">
+            <div className="screen-mode">
                 <span></span>
             </div>
-            <h1><a href="index.html"></a>
-            </h1>
+            <h1><a href="index.html"></a></h1>
             <nav>
                 <ul>
                     <li>
