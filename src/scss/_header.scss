@@ -6,6 +6,7 @@ header {
     background-color: $light-primary;
     height: 64px;
     padding: 10px 20px;
+    transition: .5s;
     align-items: center;
     .screen-mode {
         display: flex;
@@ -45,6 +46,7 @@ header {
     ul {
         display: flex;
         li {
+            transition: .5s;
             margin-left: 10px;
             color: $light-bg;
             list-style: none;
@@ -52,6 +54,32 @@ header {
             &:hover {
                 cursor: pointer;
                 text-decoration: underline;
+            }
+        }
+    }
+    &.dark {
+        background-color: $dark-primary;
+        .screen-mode {
+            background-color: $dark-secondary;
+            justify-content: right;
+            span {
+                background-color: $dark-primary;
+            }
+            &:hover {
+                background-color: $dark-bg;
+            }
+            &:active {
+                background-color: $dark-secondary;
+            }
+        }
+        h1 {
+            width: 67px;
+            background-image: url('../../public/assets/darkLogo.webp');
+            background-size: cover;
+        }
+        ul {
+            li {
+                color: $dark-secondary;
             }
         }
     }
