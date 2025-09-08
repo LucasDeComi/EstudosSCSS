@@ -2,7 +2,7 @@
 
 main {
     margin-left: 300px;
-    padding: 125px 100px 0 100px;
+    padding: 125px 100px 50px 100px;
     font-size: $desktop-text;
     section {
         margin-bottom: 75px;
@@ -27,5 +27,9 @@ main {
     }
     li {
         margin-bottom: .5rem;
+    }
+    &.dark {
+        background-color: $dark-bg;
+        color: $light-secondary;
     }
 }
