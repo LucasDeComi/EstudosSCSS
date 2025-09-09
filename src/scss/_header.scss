@@ -61,30 +61,4 @@ header {
             }
         }
     }
-    &.dark {
-        background-color: $dark-primary;
-        .screen-mode {
-            background-color: $dark-secondary;
-            span {
-                background-color: $dark-primary;
-                left: 55%;
-            }
-            &:hover {
-                background-color: $dark-bg;
-            }
-            &:active {
-                background-color: $dark-secondary;
-            }
-        }
-        h1 {
-            width: 67px;
-            background-image: url('./assets/darkLogo.webp');
-            background-size: cover;
-        }
-        ul {
-            li {
-                color: $dark-secondary;
-            }
-        }
-    }
 }

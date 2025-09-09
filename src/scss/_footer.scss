@@ -10,6 +10,7 @@ footer {
     position: relative;
     z-index: 1;
     background-color: $light-primary;
+    color: $light-bg;
     padding: 3rem;
     h4 {
         font-size: $footer-title;
@@ -20,7 +21,7 @@ footer {
         list-style: none;
         margin-left: .5rem;
         a {
-            color: $dark-bg;
+            color: $light-bg;
             text-decoration: none;
             margin-bottom: 5px;
             &:hover {

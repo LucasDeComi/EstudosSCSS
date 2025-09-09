@@ -1,0 +1,50 @@
+@import 'variables';
+
+#root.dark {
+    header {
+        background-color: $dark-primary;
+        .screen-mode {
+            background-color: $dark-secondary;
+            span {
+                background-color: $dark-primary;
+                left: 55%;
+            }
+            &:hover {
+                background-color: $dark-bg;
+            }
+            &:active {
+                background-color: $dark-secondary;
+            }
+        }
+        h1 {
+            width: 67px;
+            background-image: url('./assets/darkLogo.webp');
+            background-size: cover;
+        }
+        ul {
+            li {
+                color: $dark-secondary;
+            }
+        }
+    }
+    main {
+        background-color: $dark-bg;
+        color: $light-secondary;
+    }
+    aside {
+        background-color: $dark-secondary;
+        li {
+            color: $light-secondary;
+            &:hover {
+                background-color: $dark-bg;
+            }
+        }
+    }
+    footer {
+        background-color: $dark-primary;
+        color: $dark-bg;
+        a {
+            color: $dark-bg;
+        }
+    }
+}
