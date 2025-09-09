@@ -1,0 +1,36 @@
+@import 'variables';
+
+$footer-title: 1.2rem;
+$footer-text: 1rem;
+$copy: 0.8rem;
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    background-color: $light-primary;
+    padding: 3rem;
+    h4 {
+        font-size: $footer-title;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    li {
+        list-style: none;
+        margin-left: .5rem;
+        a {
+            color: $dark-bg;
+            text-decoration: none;
+            margin-bottom: 5px;
+            &:hover {
+                text-decoration: underline;
+                font-weight: 500;
+            }
+        }
+    }
+    h6 {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+}

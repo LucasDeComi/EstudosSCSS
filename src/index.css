@@ -26,6 +26,7 @@ header .screen-mode span {
   background-color: #d0649c;
   width: 30px;
   height: 30px;
+  position: relative;
   border-radius: 50%;
   transition: 0.5s;
 }
@@ -41,7 +42,7 @@ header .screen-mode:active {
 }
 header h1 {
   display: inline-block;
-  background-image: url("../../public/assets/lightLogo.webp");
+  background-image: url("./assets/lightLogo.webp");
   width: 65px;
   height: 50px;
   margin-left: 10rem;
@@ -66,10 +67,10 @@ header.dark {
 }
 header.dark .screen-mode {
   background-color: #1e1e1e;
-  justify-content: right;
 }
 header.dark .screen-mode span {
   background-color: #6e2d91;
+  left: 55%;
 }
 header.dark .screen-mode:hover {
   background-color: #252525;
@@ -79,7 +80,7 @@ header.dark .screen-mode:active {
 }
 header.dark h1 {
   width: 67px;
-  background-image: url("../../public/assets/darkLogo.webp");
+  background-image: url("./assets/darkLogo.webp");
   background-size: cover;
 }
 header.dark ul li {
@@ -149,6 +150,37 @@ main li {
 main.dark {
   background-color: #252525;
   color: #e5e5e5;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  background-color: #d0649c;
+  padding: 3rem;
+}
+footer h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+footer li {
+  list-style: none;
+  margin-left: 0.5rem;
+}
+footer li a {
+  color: #252525;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+footer li a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+footer h6 {
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
 
 * {

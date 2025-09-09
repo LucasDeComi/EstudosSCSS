@@ -24,6 +24,7 @@ header {
             background-color: $light-primary;
             width: 30px;
             height: 30px;
+            position: relative;
             border-radius: 50%;
             transition: .5s;
         }
@@ -40,7 +41,7 @@ header {
     }
     h1 {
         display: inline-block;
-        background-image: url('../../public/assets/lightLogo.webp');
+        background-image: url('./assets/lightLogo.webp');
         width: 65px;
         height: 50px;
         margin-left: 10rem;
@@ -64,9 +65,9 @@ header {
         background-color: $dark-primary;
         .screen-mode {
             background-color: $dark-secondary;
-            justify-content: right;
             span {
                 background-color: $dark-primary;
+                left: 55%;
             }
             &:hover {
                 background-color: $dark-bg;
@@ -77,7 +78,7 @@ header {
         }
         h1 {
             width: 67px;
-            background-image: url('../../public/assets/darkLogo.webp');
+            background-image: url('./assets/darkLogo.webp');
             background-size: cover;
         }
         ul {

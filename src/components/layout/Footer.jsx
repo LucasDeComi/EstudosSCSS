@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer>
-            <section class="linkedin">
+            <section>
                 <h4>Linkedin</h4>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/lucas-de-comi-côrte-7090ba363" target="_blank">Lucas</a></li>
@@ -10,7 +10,7 @@ function Footer() {
                     <li><a href="https://www.linkedin.com/in/matheus-do-nascimento-alves-barreto-6aaa26278" target="_blank">Matheus</a></li>
                 </ul>
             </section>
-            <section class="github">
+            <section>
                 <h4>Github</h4>
                 <ul>
                     <li><a href="https://github.com/LucasDeComi" target="_blank">Lucas</a></li>
@@ -19,7 +19,7 @@ function Footer() {
                     <li><a href="https://github.com/Kaisernbt" target="_blank">Matheus</a></li>
                 </ul>
             </section>
-            <section class="copyright">
+            <section>
                 <h6>&copy;2025. Todos os direitos reservados</h6>
             </section>
         </footer>
