@@ -1,25 +1,29 @@
-import { Link, Element } from 'react-scroll';
+import { Link as ScrollLink, Element } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import Header from '../components/layout/Header';
-import Participante from '../components/ui/Participante';
 import Footer from '../components/layout/Footer';
+import Nav from '../components/layout/Nav';
+import Participante from '../components/ui/Participante';
+import Artigo from '../components/ui/Artigo';
 
 function Home() {
     return (
         <>
             <Header/>
             <aside>
+                <Nav />
                 <ul>
                     <li>
-                        <Link to="introducao" smooth={true} duration={500}>Introdução ao projeto</Link>
+                        <ScrollLink to="introducao" smooth={true} duration={500}>Introdução ao projeto</ScrollLink>
                     </li>
                     <li>
-                        <Link to="definicao" smooth={true} duration={500}>O que é o SCSS?</Link>
+                        <ScrollLink to="definicao" smooth={true} duration={500}>O que é o SCSS?</ScrollLink>
                     </li>
                     <li>
-                        <Link to="utilidades" smooth={true} duration={500}>Utilidades do SCSS</Link>
+                        <ScrollLink to="utilidades" smooth={true} duration={500}>Utilidades do SCSS</ScrollLink>
                     </li>
                     <li>
-                        <Link to="participantes" smooth={true} duration={500}>Participantes do projeto</Link>
+                        <ScrollLink to="participantes" smooth={true} duration={500}>Participantes do projeto</ScrollLink>
                     </li>
                 </ul>
             </aside>
@@ -39,7 +43,7 @@ function Home() {
                                 <li>O aninhamento de tags, classes, identificadores, atributos e comportamentos;</li>
                                 <li>Criação de funções para atribuição de parâmetros;</li>
                                 <li>Manipulação mais ampla de variáveis;</li>
-                                <li>Outras diversas funcionalidades presentes <a href="#">nos artigos abaixo.</a></li>
+                                <li>Outras diversas funcionalidades presentes <ScrollLink to="artigos" smooth={true} duration={500}>nos artigos abaixo.</ScrollLink></li>
                             </ul>
                         </Element>
                         <p>Nós utilizamos o SCSS para agilizar e facilitar o processo de estilização, tornando o entendimento e o
@@ -49,7 +53,7 @@ function Home() {
                     </section>
                 </Element>
                 <Element name="participantes">
-                    <section>
+                    <section id="participantes">
                         <h3>Participantes do projeto</h3>
                         <Participante
                             nome="Lucas de Comi Côrte"
@@ -82,6 +86,35 @@ function Home() {
                             participacao="Backend - JavaScript"
                             github="https://github.com/Kaisernbt"
                             linkedin="https://www.linkedin.com/in/matheus-do-nascimento-alves-barreto-6aaa26278"
+                        />
+                    </section>
+                </Element>
+                <Element name="artigos">
+                    <section>
+                        <Artigo
+                            titulo="Como instalar e compilar o SCSS?"
+                            descricao="Aprenda, neste artigo, a realizar a instalação e configuração completas para utilizar o SCSS em seu projeto web."
+                            imagem="artigo1"
+                        />
+                        <Artigo
+                            titulo="SCSS: Funcionalidades básicas e utilização."
+                            descricao="Este artigo tem como objetivo ensinar a utilizar o SCSS da melhor forma e apresentar funcionalidades úteis da linguagem."
+                            imagem="artigo2"
+                        />
+                        <Artigo
+                            titulo="Mixin: Tornando o seu código mais compacto"
+                            descricao="Neste artigo, será ensinado o mixin, um recurso do SCSS que serve como bloco de repetição, assim compactando bastante o seu código."
+                            imagem="artigo3"
+                        />
+                        <Artigo
+                            titulo="Como o SCSS pode ser dividido e organizado em vários arquivos?"
+                            descricao="O SCSS tem uma funcionalidade de criar vários arquivos para dividir uma estilização em arquivos menores, compilando tudo em um arquivo final, para facilitar organização."
+                            imagem="artigo4"
+                        />
+                        <Artigo
+                            titulo="Funções e programação no SCSS"
+                            descricao="A linguagem SCSS torna possível criar funções, como em linguagens de programação. Isso permite que algum atributo receba um valor de acordo com as suas especificações."
+                            imagem="artigo5"
                         />
                     </section>
                 </Element>
