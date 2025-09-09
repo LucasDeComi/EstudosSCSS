@@ -2,6 +2,7 @@ import { Link as ScrollLink, Element } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
+import Nav from '../components/layout/Nav';
 import Participante from '../components/ui/Participante';
 import Artigo from '../components/ui/Artigo';
 
@@ -10,6 +11,7 @@ function Home() {
         <>
             <Header/>
             <aside>
+                <Nav />
                 <ul>
                     <li>
                         <ScrollLink to="introducao" smooth={true} duration={500}>Introdução ao projeto</ScrollLink>
