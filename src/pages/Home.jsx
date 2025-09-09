@@ -11,6 +11,15 @@ function Home() {
         <>
             <Header/>
             <aside>
+                <section>
+                    <div className="screenMode">
+                        <span></span>
+                    </div>
+                    <div className="menu-toggle">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </section>
                 <Nav />
                 <ul>
                     <li>
