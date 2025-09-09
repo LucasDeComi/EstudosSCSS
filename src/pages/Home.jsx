@@ -12,7 +12,7 @@ function Home() {
             <Header/>
             <aside>
                 <section>
-                    <div className="screenMode">
+                    <div className="screen-mode">
                         <span></span>
                     </div>
                     <div className="menu-toggle">

@@ -1,6 +1,37 @@
 @import 'variables';
+@import 'screen-mode';
+@import 'menu-toggle';
 
 aside {
+    section {
+        display: none;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .screen-mode {
+            background-color: $light-primary;
+            &:hover {
+                background-color: $light-primary;
+            }
+            span {
+                background-color: $light-bg;
+            }
+        }
+        .menu-toggle {
+            display: flex;
+            justify-content: center;
+            border: .5px solid $dark-bg;
+            span {
+                &:first-child {
+                    transform: translateY(.5px) rotate(45deg);
+                }
+                &:last-child {
+                    transform: translateY(-.5px) rotate(-45deg);
+                }
+                width: 25px;
+                background-color: $dark-bg;
+            }
+        }
+    }
     background-color: $light-secondary;
     width: 300px;
     height: 100vh;

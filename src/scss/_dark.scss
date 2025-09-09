@@ -33,6 +33,15 @@
     }
     aside {
         background-color: $dark-secondary;
+        .screen-mode {
+            background-color: $dark-primary;
+            &:hover {
+                background-color: $dark-primary;
+            }
+            span {
+                background-color: $dark-secondary;
+            }
+        }
         li {
             color: $light-secondary;
             &:hover {

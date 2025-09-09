@@ -1,5 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+.screen-mode {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #f5f5f5;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+}
+.screen-mode span {
+  display: flex;
+  background-color: #d0649c;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.screen-mode:hover {
+  cursor: pointer;
+  background-color: #e5e5e5;
+}
+.screen-mode:hover span {
+  scale: 1.05;
+}
+.screen-mode:active {
+  background-color: #f5f5f5;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  width: 40px;
+  height: 40px;
+  border: 0.5px solid #f5f5f5;
+  border-radius: 5px;
+}
+.menu-toggle span {
+  display: block;
+  background-color: #f5f5f5;
+  width: 20px;
+  height: 1.5px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -11,34 +58,6 @@ header {
   z-index: 1;
   transition: 0.5s;
   align-items: center;
-}
-header .screen-mode {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  background-color: #f5f5f5;
-  width: 80px;
-  height: 40px;
-  border-radius: 50px;
-}
-header .screen-mode span {
-  display: flex;
-  background-color: #d0649c;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-header .screen-mode:hover {
-  cursor: pointer;
-  background-color: #e5e5e5;
-}
-header .screen-mode:hover span {
-  scale: 1.05;
-}
-header .screen-mode:active {
-  background-color: #f5f5f5;
 }
 header h1 {
   display: inline-block;
@@ -62,6 +81,57 @@ header ul li:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+header ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.screen-mode {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #f5f5f5;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+}
+.screen-mode span {
+  display: flex;
+  background-color: #d0649c;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.screen-mode:hover {
+  cursor: pointer;
+  background-color: #e5e5e5;
+}
+.screen-mode:hover span {
+  scale: 1.05;
+}
+.screen-mode:active {
+  background-color: #f5f5f5;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  width: 40px;
+  height: 40px;
+  border: 0.5px solid #f5f5f5;
+  border-radius: 5px;
+}
+.menu-toggle span {
+  display: block;
+  background-color: #f5f5f5;
+  width: 20px;
+  height: 1.5px;
+}
 
 aside {
   background-color: #e5e5e5;
@@ -70,6 +140,35 @@ aside {
   padding: 20px;
   position: fixed;
   top: 64px;
+}
+aside section {
+  display: none;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+aside section .screen-mode {
+  background-color: #d0649c;
+}
+aside section .screen-mode:hover {
+  background-color: #d0649c;
+}
+aside section .screen-mode span {
+  background-color: #f5f5f5;
+}
+aside section .menu-toggle {
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #252525;
+}
+aside section .menu-toggle span {
+  width: 25px;
+  background-color: #252525;
+}
+aside section .menu-toggle span:first-child {
+  transform: translateY(0.5px) rotate(45deg);
+}
+aside section .menu-toggle span:last-child {
+  transform: translateY(-0.5px) rotate(-45deg);
 }
 aside li {
   font-size: 1.1rem;
@@ -176,6 +275,15 @@ footer h6 {
   color: #e5e5e5;
 }
 #root.dark aside {
+  background-color: #1e1e1e;
+}
+#root.dark aside .screen-mode {
+  background-color: #6e2d91;
+}
+#root.dark aside .screen-mode:hover {
+  background-color: #6e2d91;
+}
+#root.dark aside .screen-mode span {
   background-color: #1e1e1e;
 }
 #root.dark aside li {

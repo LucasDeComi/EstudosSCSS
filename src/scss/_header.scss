@@ -1,4 +1,6 @@
-@import 'variables';
+@import './variables';
+@import './screen-mode';
+@import './menu-toggle';
 
 header {
     display: flex;
@@ -11,34 +13,6 @@ header {
     z-index: 1;
     transition: .5s;
     align-items: center;
-    .screen-mode {
-        display: flex;
-        align-items: center;
-        padding: 5px;
-        background-color: $light-bg;
-        width: 80px;
-        height: 40px;
-        border-radius: 50px;
-        span {
-            display: flex;
-            background-color: $light-primary;
-            width: 30px;
-            height: 30px;
-            position: relative;
-            border-radius: 50%;
-            transition: .5s;
-        }
-        &:hover {
-            cursor: pointer;
-            background-color: $light-secondary;
-            span {
-                scale: 1.05;
-            }
-        }
-        &:active {
-            background-color: $light-bg;
-        }
-    }
     h1 {
         display: inline-block;
         background-image: url('./assets/lightLogo.webp');
@@ -58,6 +32,10 @@ header {
             &:hover {
                 cursor: pointer;
                 text-decoration: underline;
+            }
+            a {
+                text-decoration: none;
+                color: $light-bg;
             }
         }
     }

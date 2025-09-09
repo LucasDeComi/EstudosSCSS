@@ -1,0 +1,28 @@
+.screen-mode {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: $light-bg;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    span {
+        display: flex;
+        background-color: $light-primary;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border-radius: 50%;
+        transition: .5s;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: $light-secondary;
+        span {
+            scale: 1.05;
+        }
+    }
+    &:active {
+        background-color: $light-bg;
+    }
+}
