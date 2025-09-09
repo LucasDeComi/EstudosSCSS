@@ -9,6 +9,11 @@ function Header() {
             <h1><a href="index.html"></a>
             </h1>
             <Nav />
+            <div className="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </header>
     )
 }
