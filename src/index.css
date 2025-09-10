@@ -61,7 +61,7 @@ header {
 }
 header h1 {
   display: inline-block;
-  background-image: url("./lightLogo.webp");
+  background-image: url("/lightLogo.webp");
   width: 65px;
   height: 50px;
   margin-left: 10rem;
@@ -271,7 +271,7 @@ footer h6 {
 }
 #root.dark header h1 {
   width: 67px;
-  background-image: url("./darkLogo.webp");
+  background-image: url("/darkLogo.webp");
   background-size: cover;
 }
 #root.dark header ul li {
