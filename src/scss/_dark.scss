@@ -33,6 +33,9 @@
     }
     aside {
         background-color: $dark-secondary;
+        nav ul li a {
+            color: $light-bg;
+        }
         .screen-mode {
             background-color: $dark-primary;
             &:hover {
@@ -46,6 +49,12 @@
             color: $light-secondary;
             &:hover {
                 background-color: $dark-bg;
+            }
+        }
+        .menu-toggle {
+            border: .5px solid $light-bg;
+            span {
+                background-color: $light-bg;
             }
         }
     }

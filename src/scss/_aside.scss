@@ -3,6 +3,12 @@
 @import 'menu-toggle';
 
 aside {
+    background-color: $light-secondary;
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 64px;
     section {
         display: none;
         justify-content: space-between;
@@ -32,12 +38,13 @@ aside {
             }
         }
     }
-    background-color: $light-secondary;
-    width: 300px;
-    height: 100vh;
-    padding: 20px;
-    position: fixed;
-    top: 64px;
+    nav {
+        display: none;
+        a {
+            text-decoration: none;
+            color: $dark-secondary;
+        }
+    }
     li {
         font-size: $desktop-text;
         font-weight: 600;
