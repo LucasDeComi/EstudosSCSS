@@ -451,6 +451,22 @@ footer h6 {
   footer section {
     margin-bottom: 3rem;
   }
+  .code-part {
+    border-radius: 15px;
+  }
+  .code-part .code-header {
+    height: 30px;
+    padding: 10px 15px;
+  }
+  .code-part .code-header .code-language {
+    font-size: 0.85rem;
+  }
+  .code-part .code-header .fullscreen-button img {
+    width: 20px;
+  }
+  .code-part .code {
+    padding: 15px;
+  }
 }
 * {
   padding: 0;
