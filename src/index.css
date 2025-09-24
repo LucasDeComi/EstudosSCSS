@@ -61,7 +61,7 @@ header {
 }
 header h1 {
   display: inline-block;
-  background-image: url("./assets/lightLogo.webp");
+  background-image: url("./lightLogo.webp");
   width: 65px;
   height: 50px;
   margin-left: 10rem;
@@ -253,6 +253,69 @@ footer h6 {
   margin-top: 1rem;
 }
 
+.code-part {
+  background: #282a36;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.code-part .code-header {
+  background: #23242f;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+  border-radius: 20px 20px 0 0;
+}
+.code-part .code-header .code-language {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0;
+}
+.code-part .code-header .fullscreen-button {
+  background: transparent;
+  padding: 2px 2px 0 2px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+.code-part .code-header .fullscreen-button:hover {
+  background-color: #282a36;
+}
+.code-part .code-header .fullscreen-button img {
+  width: 30px;
+}
+.code-part .code {
+  padding: 15px 25px;
+}
+.code-part .code ul {
+  margin: 0;
+}
+.code-part .code ul ul {
+  margin-left: 20px;
+}
+.code-part .code ul li {
+  list-style: none;
+  color: #f5f5f5;
+  font-weight: 300;
+}
+.code-part .code ul li span.red {
+  color: #c05555;
+}
+.code-part .code ul li span.green {
+  color: #50fa7b;
+}
+.code-part .code ul li span.blue {
+  color: #8be9fd;
+}
+.code-part .code ul li span.yellow {
+  color: #e5ff00;
+}
+.code-part .code ul li span.pink {
+  color: #d0649c;
+}
+
 #root.dark header {
   background-color: #6e2d91;
 }
@@ -271,7 +334,7 @@ footer h6 {
 }
 #root.dark header h1 {
   width: 67px;
-  background-image: url("./assets/darkLogo.webp");
+  background-image: url("./darkLogo.webp");
   background-size: cover;
 }
 #root.dark header ul li {
@@ -388,6 +451,11 @@ body {
 }
 #root.dark {
   background-color: #252525;
+}
+
+.exemplo-pastas {
+  width: 200px;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=index.css.map */

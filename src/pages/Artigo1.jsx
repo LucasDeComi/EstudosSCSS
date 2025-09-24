@@ -92,7 +92,7 @@ function Artigo1() {
                     <section>
                         <h3>3. Compilar o SCSS</h3>
                         <p>Por fim, agora faremos a utilização do SCSS. Você já deve ter a estrutura do seu projeto pronta e um arquivo .scss. Geralmente, criamos dois diretórios css e scss para dividir os arquivos, como na imagem abaixo:</p>
-                        <img src="/exemploPastas.webp" alt="Exemplo: Estrutura de pastas" />
+                        <img className="exemplo-pastas" src="./exemploPastas.webp" alt="Exemplo: Estrutura de pastas" />
                         <p>Com o seu arquivo .scss criado, abra o terminal e digite o comando:</p>
                         <CodePart 
                             linguagem="terminal"
@@ -122,11 +122,11 @@ function Artigo1() {
                             codigo='
                                 <li>{</li>
                                 <ul>
-                                    <li><span className="blue">"scripts"</span><span className="pink">: {</span></li>
+                                    <li><span class="blue">"scripts"</span><span class="pink">: {</span></li>
                                     <ul>
-                                        <li><span className="blue">"sass"</span><span className="pink">: </span><span className="green">"sass --watch scss:css"</span></li>
+                                        <li><span class="blue">"sass"</span><span class="pink">: </span><span class="yellow">"sass --watch scss:css"</span></li>
                                     </ul>
-                                    <li><span className="pink">}</span></li>
+                                    <li><span class="pink">}</span></li>
                                 </ul>
                                 <li>}</li>
                             '
