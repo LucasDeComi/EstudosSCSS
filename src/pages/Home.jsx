@@ -128,7 +128,7 @@ function Home() {
                     </section>
                 </Element>
             </main>
-            <Footer/>
+            <Footer />
         </>
     )
 }
