@@ -56,4 +56,20 @@
             margin-bottom: 3rem;
         }
     }
+    .code-part {
+        border-radius: 15px;
+        .code-header {
+            height: 30px;
+            padding: 10px 15px;
+            .code-language {
+                font-size: 0.85rem;
+            }
+            .fullscreen-button img {
+                width: 20px;
+            }
+        }
+        .code {
+            padding: 15px;
+        }
+    }
 }
