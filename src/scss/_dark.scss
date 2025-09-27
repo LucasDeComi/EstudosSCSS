@@ -65,4 +65,14 @@
             color: $dark-bg;
         }
     }
+    .participante {
+        background-color: $dark-primary;
+        border: 1px solid $light-secondary;
+        .link-linkedin {
+            background-image: url("/linkedinDark.webp");
+        }
+        .link-github {
+            background-image: url("/githubDark.webp");
+        }
+    }
 }

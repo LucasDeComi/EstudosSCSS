@@ -1,0 +1,61 @@
+@import 'variables';
+
+.participante {
+    display: flex;
+    flex-direction: column;
+    background-color: $light-primary;
+    padding: 20px;
+    border: 1px solid $dark-secondary;
+    border-radius: 20px;
+    margin-top: 25px;
+    .social {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+        background-color: #ddd;
+        border-radius: 15px;
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            background-size: cover;
+            &.link-linkedin {
+                border-radius: 5px;
+                background-image: url("/linkedinLight.webp");
+            }
+            &.link-github {
+                background-image: url("/githubLight.webp");
+                image-rendering: pixelated;
+            }
+        }
+    }
+    .descricao-participante {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5px;
+        .nome {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .participacao {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 15px;
+            margin: 0;
+        }
+    }
+}

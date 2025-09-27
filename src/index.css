@@ -253,6 +253,66 @@ footer h6 {
   margin-top: 1rem;
 }
 
+.participante {
+  display: flex;
+  flex-direction: column;
+  background-color: #d0649c;
+  padding: 20px;
+  border: 1px solid #1e1e1e;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.participante .social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.participante .foto-perfil {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 15px;
+}
+.participante .redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.participante .redes a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+}
+.participante .redes a.link-linkedin {
+  border-radius: 5px;
+  background-image: url("/linkedinLight.webp");
+}
+.participante .redes a.link-github {
+  background-image: url("/githubLight.webp");
+  image-rendering: pixelated;
+}
+.participante .descricao-participante {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+.participante .descricao-participante .nome {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.participante .descricao-participante .participacao {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.participante .descricao-participante p {
+  font-size: 15px;
+  margin: 0;
+}
+
 .code-part {
   background: #282a36;
   border-radius: 20px;
@@ -393,6 +453,16 @@ footer h6 {
 }
 #root.dark footer a {
   color: #252525;
+}
+#root.dark .participante {
+  background-color: #6e2d91;
+  border: 1px solid #e5e5e5;
+}
+#root.dark .participante .link-linkedin {
+  background-image: url("/linkedinDark.webp");
+}
+#root.dark .participante .link-github {
+  background-image: url("/githubDark.webp");
 }
 
 @media (max-width: 768px) {
