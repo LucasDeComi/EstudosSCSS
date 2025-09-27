@@ -16,7 +16,7 @@ $code-part: #282a36;
         padding: 5px 25px;
         border-radius: 20px 20px 0 0;
         .code-language {
-            color: $light-bg;
+            color: nth($bg, 1);
             font-size: 20px;
             font-weight: 200;
             margin: 0;
@@ -44,7 +44,7 @@ $code-part: #282a36;
             }
             li {
                 list-style: none;
-                color: $light-bg;
+                color: nth($bg, 1);
                 font-weight: 300;
                 span {
                     &.red {

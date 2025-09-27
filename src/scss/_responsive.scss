@@ -38,15 +38,15 @@
     main {
         margin: 0;
         padding: 100px 50px;
-        font-size: $mobile-text;
+        font-size: nth($text, 2);
         section {
             margin-bottom: 50px;
         }
         h2 {
-            font-size: $mobile-title;
+            font-size: nth($title, 2);
         }
         h3 {
-            font-size: $mobile-subtitle;
+            font-size: nth($subtitle, 2);
         }
     }
     footer {

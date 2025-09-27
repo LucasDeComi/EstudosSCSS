@@ -3,9 +3,9 @@
 .participante {
     display: flex;
     flex-direction: column;
-    background-color: $light-primary;
+    background-color: nth($primary, 1);
     padding: 20px;
-    border: 1px solid $dark-secondary;
+    border: 1px solid nth($secondary, 2);
     border-radius: 20px;
     margin-top: 25px;
     .social {

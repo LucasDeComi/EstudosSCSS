@@ -7,7 +7,7 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    background-color: $light-primary;
+    background-color: nth($primary, 1);
     height: 64px;
     padding: 10px 20px;
     z-index: 1;
@@ -26,7 +26,7 @@ header {
         li {
             transition: .5s;
             margin-left: 10px;
-            color: $light-bg;
+            color: nth($bg, 1);
             list-style: none;
             font-weight: 600;
             &:hover {
@@ -35,7 +35,7 @@ header {
             }
             a {
                 text-decoration: none;
-                color: $light-bg;
+                color: nth($bg, 1);
             }
         }
     }

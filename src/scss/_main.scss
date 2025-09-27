@@ -3,17 +3,17 @@
 main {
     margin-left: 300px;
     padding: 125px 100px 50px 100px;
-    font-size: $desktop-text;
+    font-size: nth($text, 1);
     section {
         margin-bottom: 75px;
     }
     h2 {
-        font-size: $desktop-title;
+        font-size: nth($title, 1);
         font-weight: 600;
         margin-bottom: 25px;
     }
     h3 {
-        font-size: $desktop-subtitle;
+        font-size: nth($subtitle, 1);
         font-weight: 600;
         margin-bottom: 1.5rem;
     }

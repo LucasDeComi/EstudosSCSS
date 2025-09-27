@@ -1,7 +1,6 @@
 @import 'variables';
 
 $footer-title: 1.2rem;
-$footer-text: 1rem;
 $copy: 0.8rem;
 
 footer {
@@ -9,8 +8,8 @@ footer {
     justify-content: space-around;
     position: relative;
     z-index: 1;
-    background-color: $light-primary;
-    color: $light-bg;
+    background-color: nth($primary, 1);
+    color: nth($bg, 1);
     padding: 3rem;
     h4 {
         font-size: $footer-title;
@@ -21,7 +20,7 @@ footer {
         list-style: none;
         margin-left: .5rem;
         a {
-            color: $light-bg;
+            color: nth($bg, 1);
             text-decoration: none;
             margin-bottom: 5px;
             &:hover {
@@ -31,7 +30,7 @@ footer {
         }
     }
     h6 {
-        font-size: 0.8rem;
+        font-size: $copy;
         margin-top: 1rem;
     }
 }

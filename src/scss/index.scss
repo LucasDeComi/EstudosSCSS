@@ -20,9 +20,10 @@ body {
     font-family: 'Inter', sans-serif;   
 }
 #root {
-    background-color: $light-bg;
+    background-color: nth($bg, 1);
+    transition: .5s;
     &.dark {
-        background-color: $dark-bg;
+        background-color: nth($bg, 2);
     }
 }
 .exemplo-pastas {

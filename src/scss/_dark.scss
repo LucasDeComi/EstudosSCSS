@@ -2,18 +2,18 @@
 
 #root.dark {
     header {
-        background-color: $dark-primary;
+        background-color: nth($primary, 2);
         .screen-mode {
-            background-color: $dark-secondary;
+            background-color: nth($secondary, 2);
             span {
-                background-color: $dark-primary;
+                background-color: nth($primary, 2);
                 left: 55%;
             }
             &:hover {
-                background-color: $dark-bg;
+                background-color: nth($bg, 2);
             }
             &:active {
-                background-color: $dark-secondary;
+                background-color: nth($secondary, 2);
             }
         }
         h1 {
@@ -23,51 +23,51 @@
         }
         ul {
             li {
-                color: $dark-secondary;
+                color: nth($secondary, 2);
             }
         }
     }
     main {
-        background-color: $dark-bg;
-        color: $light-secondary;
+        background-color: nth($bg, 2);
+        color: nth($secondary, 1);
     }
     aside {
-        background-color: $dark-secondary;
+        background-color: nth($secondary, 2);
         nav ul li a {
-            color: $light-bg;
+            color: nth($bg, 1);
         }
         .screen-mode {
-            background-color: $dark-primary;
+            background-color: nth($primary, 2);
             &:hover {
-                background-color: $dark-primary;
+                background-color: nth($primary, 2);
             }
             span {
-                background-color: $dark-secondary;
+                background-color: nth($secondary, 2);
             }
         }
         li {
-            color: $light-secondary;
+            color: nth($secondary, 1);
             &:hover {
-                background-color: $dark-bg;
+                background-color: nth($bg, 2);
             }
         }
         .menu-toggle {
-            border: .5px solid $light-bg;
+            border: .5px solid nth($bg, 1);
             span {
-                background-color: $light-bg;
+                background-color: nth($bg, 1);
             }
         }
     }
     footer {
-        background-color: $dark-primary;
-        color: $dark-bg;
+        background-color: nth($primary, 2);
+        color: nth($bg, 2);
         a {
-            color: $dark-bg;
+            color: nth($bg, 2);
         }
     }
     .participante {
-        background-color: $dark-primary;
-        border: 1px solid $light-secondary;
+        background-color: nth($primary, 2);
+        border: 1px solid nth($secondary, 1);
         .link-linkedin {
             background-image: url("/linkedinDark.webp");
         }
