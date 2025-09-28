@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     padding: 5px;
-    background-color: $light-bg;
+    background-color: nth($bg, 1);
     width: 80px;
     height: 40px;
     border-radius: 50px;
     span {
         display: flex;
-        background-color: $light-primary;
+        background-color: nth($primary, 1);
         width: 30px;
         height: 30px;
         position: relative;
@@ -17,12 +17,12 @@
     }
     &:hover {
         cursor: pointer;
-        background-color: $light-secondary;
+        background-color: nth($secondary, 1);
         span {
             scale: 1.05;
         }
     }
     &:active {
-        background-color: $light-bg;
+        background-color: nth($bg, 1);
     }
 }

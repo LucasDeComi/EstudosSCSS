@@ -3,8 +3,8 @@
 @import 'menu-toggle';
 
 aside {
-    background-color: $light-secondary;
-    width: 300px;
+    background-color: nth($secondary, 1);
+    width: 20%;
     height: 100vh;
     padding: 20px;
     position: fixed;
@@ -14,18 +14,18 @@ aside {
         justify-content: space-between;
         margin-bottom: 20px;
         .screen-mode {
-            background-color: $light-primary;
+            background-color: nth($primary, 1);
             &:hover {
-                background-color: $light-primary;
+                background-color: nth($primary, 1);
             }
             span {
-                background-color: $light-bg;
+                background-color: nth($bg, 1);
             }
         }
         .menu-toggle {
             display: flex;
             justify-content: center;
-            border: .5px solid $dark-bg;
+            border: .5px solid nth($bg, 2);
             span {
                 &:first-child {
                     transform: translateY(.5px) rotate(45deg);
@@ -34,7 +34,7 @@ aside {
                     transform: translateY(-.5px) rotate(-45deg);
                 }
                 width: 25px;
-                background-color: $dark-bg;
+                background-color: nth($bg, 2);
             }
         }
     }
@@ -42,18 +42,18 @@ aside {
         display: none;
         a {
             text-decoration: none;
-            color: $dark-secondary;
+            color: nth($secondary, 2);
         }
     }
     li {
-        font-size: $desktop-text;
+        font-size: nth($text, 1);
         font-weight: 600;
         list-style: none;
         padding: 10px;
         margin-bottom: 10px;
         &:hover {
             cursor: pointer;
-            background-color: $light-bg;
+            background-color: nth($bg, 1);
             border-radius: 8px;
             text-decoration: underline;
         }

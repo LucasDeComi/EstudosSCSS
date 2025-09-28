@@ -58,7 +58,7 @@ function Home() {
                         <p>Nós utilizamos o SCSS para agilizar e facilitar o processo de estilização, tornando o entendimento e o
                             visual da folha de estilo muito mais claros. É altamente recomendável utilizá-lo em projetos de grande
                             escala para aprimorar o seu andamento.</p>
-                        <p>A linguagem necessita de ser compilada em CSS para funcionar no projeto, pois ela não é lida normalmente na web. Veja o processo completo de instalação <a href="#">neste artigo.</a></p>
+                        <p>A linguagem necessita de ser compilada em CSS para funcionar no projeto, pois ela não é lida normalmente na web. Veja o processo completo de instalação <RouterLink to="/artigo1">neste artigo</RouterLink>.</p>
                     </section>
                 </Element>
                 <Element name="participantes">
@@ -100,6 +100,7 @@ function Home() {
                 </Element>
                 <Element name="artigos">
                     <section>
+                        <h3>Artigos</h3>
                         <Artigo
                             titulo="Como instalar e compilar o SCSS?"
                             descricao="Aprenda, neste artigo, a realizar a instalação e configuração completas para utilizar o SCSS em seu projeto web."
@@ -128,7 +129,7 @@ function Home() {
                     </section>
                 </Element>
             </main>
-            <Footer/>
+            <Footer />
         </>
     )
 }

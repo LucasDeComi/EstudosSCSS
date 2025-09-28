@@ -62,6 +62,7 @@ header {
 header h1 {
   display: inline-block;
   background-image: url("/lightLogo.webp");
+  background-image: url("./lightLogo.webp");
   width: 65px;
   height: 50px;
   margin-left: 10rem;
@@ -135,7 +136,7 @@ header ul li a {
 
 aside {
   background-color: #e5e5e5;
-  width: 300px;
+  width: 20%;
   height: 100vh;
   padding: 20px;
   position: fixed;
@@ -192,7 +193,8 @@ aside li:hover {
 }
 
 main {
-  margin-left: 300px;
+  width: 80%;
+  margin-left: 20%;
   padding: 125px 100px 50px 100px;
   font-size: 1.1rem;
 }
@@ -253,6 +255,175 @@ footer h6 {
   margin-top: 1rem;
 }
 
+.participante {
+  display: flex;
+  flex-direction: column;
+  background-color: #d0649c;
+  padding: 20px;
+  border: 1px solid #1e1e1e;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.participante .social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.participante .foto-perfil {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 15px;
+}
+.participante .redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.participante .redes a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+}
+.participante .redes a.link-linkedin {
+  border-radius: 5px;
+  background-image: url("/linkedinLight.webp");
+}
+.participante .redes a.link-github {
+  background-image: url("/githubLight.webp");
+  image-rendering: pixelated;
+}
+.participante .descricao-participante {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+.participante .descricao-participante .nome {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.participante .descricao-participante .participacao {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.participante .descricao-participante p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.artigos a {
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+.artigos a .imagem-artigo {
+  width: 50%;
+  height: 250px;
+  background-color: #ddd;
+  border-radius: 20px;
+  box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.1450980392);
+  background-size: cover;
+  background-position: center;
+}
+.artigos a .imagem-artigo#artigo1 {
+  background-image: url("/artigo1.webp");
+}
+.artigos a .imagem-artigo#artigo2 {
+  background-image: url("/artigo2.webp");
+}
+.artigos a .informacoes-artigo {
+  width: 50%;
+  padding: 20px 30px;
+  color: #1e1e1e;
+}
+.artigos a .informacoes-artigo h4 {
+  font-size: 30px;
+}
+
+.code-part {
+  background: #282a36;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.code-part .code-header {
+  background: #23242f;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+  border-radius: 20px 20px 0 0;
+}
+.code-part .code-header .code-language {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0;
+}
+.code-part .code-header .fullscreen-button {
+  background: transparent;
+  padding: 2px 2px 0 2px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+.code-part .code-header .fullscreen-button:hover {
+  background-color: #282a36;
+}
+.code-part .code-header .fullscreen-button img {
+  width: 30px;
+}
+.code-part .code {
+  padding: 15px 25px;
+}
+.code-part .code ul {
+  margin: 0;
+}
+.code-part .code ul ul {
+  margin-left: 20px;
+}
+.code-part .code ul li {
+  list-style: none;
+  color: #f5f5f5;
+  font-weight: 300;
+}
+.code-part .code ul li span.red {
+  color: #c05555;
+}
+.code-part .code ul li span.green {
+  color: #50fa7b;
+}
+.code-part .code ul li span.blue {
+  color: #8be9fd;
+}
+.code-part .code ul li span.yellow {
+  color: #e5ff00;
+}
+.code-part .code ul li span.pink {
+  color: #d0649c;
+}
+.code-part.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+.code-part.full .code-header {
+  border-radius: 0;
+  padding: 20px;
+}
+.code-part.full .code {
+  padding: 20px;
+}
+
 #root.dark header {
   background-color: #6e2d91;
 }
@@ -272,6 +443,7 @@ footer h6 {
 #root.dark header h1 {
   width: 67px;
   background-image: url("/darkLogo.webp");
+  background-image: url("./darkLogo.webp");
   background-size: cover;
 }
 #root.dark header ul li {
@@ -310,10 +482,23 @@ footer h6 {
 }
 #root.dark footer {
   background-color: #6e2d91;
-  color: #252525;
+  color: #f5f5f5;
 }
 #root.dark footer a {
-  color: #252525;
+  color: #f5f5f5;
+}
+#root.dark .participante {
+  background-color: #6e2d91;
+  border: 1px solid #e5e5e5;
+}
+#root.dark .participante .link-linkedin {
+  background-image: url("/linkedinDark.webp");
+}
+#root.dark .participante .link-github {
+  background-image: url("/githubDark.webp");
+}
+#root.dark .artigos .informacoes-artigo {
+  color: #f5f5f5;
 }
 
 @media (max-width: 768px) {
@@ -352,6 +537,7 @@ footer h6 {
     justify-content: center;
   }
   main {
+    width: 100%;
     margin: 0;
     padding: 100px 50px;
     font-size: 0.8rem;
@@ -372,6 +558,37 @@ footer h6 {
   footer section {
     margin-bottom: 3rem;
   }
+  .code-part {
+    border-radius: 15px;
+  }
+  .code-part .code-header {
+    height: 30px;
+    padding: 10px 15px;
+  }
+  .code-part .code-header .code-language {
+    font-size: 0.85rem;
+  }
+  .code-part .code-header .fullscreen-button img {
+    width: 20px;
+  }
+  .code-part .code {
+    padding: 15px;
+  }
+  .artigos a {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .artigos a .imagem-artigo {
+    width: 100%;
+    height: 225px;
+  }
+  .artigos a .informacoes-artigo {
+    width: 100%;
+    padding: 20px;
+  }
+  .artigos a .informacoes-artigo h4 {
+    font-size: 1.5rem;
+  }
 }
 * {
   padding: 0;
@@ -385,9 +602,15 @@ body {
 
 #root {
   background-color: #f5f5f5;
+  transition: 0.5s;
 }
 #root.dark {
   background-color: #252525;
+}
+
+.exemplo-pastas {
+  width: 200px;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=index.css.map */

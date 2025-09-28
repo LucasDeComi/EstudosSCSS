@@ -1,0 +1,85 @@
+@import 'variables';
+
+$code-header: #23242f;
+$code-part: #282a36;
+
+.code-part {
+    background: $code-part;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    .code-header {
+        background: $code-header;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 25px;
+        border-radius: 20px 20px 0 0;
+        .code-language {
+            color: nth($bg, 1);
+            font-size: 20px;
+            font-weight: 200;
+            margin: 0;
+        }
+        .fullscreen-button {
+            background: transparent;
+            padding: 2px 2px 0 2px;
+            border-radius: 5px;
+            border: none;
+            transition: .5s;
+            &:hover {
+                background-color: $code-part;
+            }
+            img {
+                width: 30px;
+            }
+        }
+    }
+    .code {
+        padding: 15px 25px;
+        ul {
+            margin: 0;
+            ul {
+                margin-left: 20px;
+            }
+            li {
+                list-style: none;
+                color: nth($bg, 1);
+                font-weight: 300;
+                span {
+                    &.red {
+                        color: #c05555;
+                    }
+                    &.green {
+                        color: #50fa7b;
+                    }
+                    &.blue {
+                        color: #8be9fd;
+                    }
+                    &.yellow {
+                        color: #e5ff00;
+                    }
+                    &.pink {
+                        color: #d0649c;
+                    }
+                }
+            }
+        }
+    }
+    &.full {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        .code-header {
+            border-radius: 0;
+            padding: 20px;
+        }
+        .code {
+            padding: 20px;
+        }
+    }
+}

@@ -6,6 +6,9 @@
 @import 'aside';
 @import 'main';
 @import 'footer';
+@import 'participante';
+@import 'artigo';
+@import 'code-part';
 @import 'dark';
 @import 'responsive';
 
@@ -18,8 +21,13 @@ body {
     font-family: 'Inter', sans-serif;   
 }
 #root {
-    background-color: $light-bg;
+    background-color: nth($bg, 1);
+    transition: .5s;
     &.dark {
-        background-color: $dark-bg;
+        background-color: nth($bg, 2);
     }
+}
+.exemplo-pastas {
+    width: 200px;
+    margin-bottom: 15px;
 }

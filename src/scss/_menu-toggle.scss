@@ -1,3 +1,5 @@
+@import 'variables';
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -6,11 +8,11 @@
     padding: 10px 0;
     width: 40px;
     height: 40px;
-    border: .5px solid $light-bg;
+    border: .5px solid nth($bg, 1);
     border-radius: 5px;
     span {
         display: block;
-        background-color: $light-bg;
+        background-color: nth($bg, 1);
         width: 20px;
         height: 1.5px;
     }
