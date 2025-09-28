@@ -60,9 +60,9 @@
     }
     footer {
         background-color: nth($primary, 2);
-        color: nth($bg, 2);
+        color: nth($bg, 1);
         a {
-            color: nth($bg, 2);
+            color: nth($bg, 1);
         }
     }
     .participante {
@@ -74,5 +74,8 @@
         .link-github {
             background-image: url("/githubDark.webp");
         }
+    }
+    .artigos .informacoes-artigo {
+        color: nth($bg, 1);
     }
 }

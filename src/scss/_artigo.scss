@@ -1,0 +1,34 @@
+@import 'variables';
+
+.artigos {
+    display: flex;
+    margin-bottom: 50px;
+    a {
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        .imagem-artigo {
+            width: 50%;
+            height: 300px;
+            background-color: #ddd;
+            border-radius: 20px;
+            box-shadow: 4px 6px 4px #00000025;
+            background-size: cover;
+            background-position: center;
+            &#artigo1 {
+                background-image: url("/artigo1.webp");
+            }
+            &#artigo2 {
+                background-image: url("/artigo2.webp");
+            }
+        }
+        .informacoes-artigo {
+            width: 50%;
+            padding: 20px 30px;
+            color: nth($secondary, 2);
+            h4 {
+                font-size: 30px;
+            }
+        }
+    }
+}

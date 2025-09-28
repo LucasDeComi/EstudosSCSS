@@ -143,7 +143,8 @@ function Artigo1() {
                 </Element>
                 <Element name="artigos">
                     <section>
-                       <Artigo
+                        <h3>Nossas outras páginas</h3>
+                        <Artigo
                             titulo="SCSS: Funcionalidades básicas e utilização."
                             descricao="Este artigo tem como objetivo ensinar a utilizar o SCSS da melhor forma e apresentar funcionalidades úteis da linguagem."
                             imagem="artigo2"

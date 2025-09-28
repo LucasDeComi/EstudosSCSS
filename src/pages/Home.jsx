@@ -100,6 +100,7 @@ function Home() {
                 </Element>
                 <Element name="artigos">
                     <section>
+                        <h3>Artigos</h3>
                         <Artigo
                             titulo="Como instalar e compilar o SCSS?"
                             descricao="Aprenda, neste artigo, a realizar a instalação e configuração completas para utilizar o SCSS em seu projeto web."
