@@ -314,18 +314,15 @@ footer h6 {
   margin: 0;
 }
 
-.artigos {
-  display: flex;
-  margin-bottom: 50px;
-}
 .artigos a {
   display: flex;
   width: 100%;
+  margin-bottom: 50px;
   text-decoration: none;
 }
 .artigos a .imagem-artigo {
   width: 50%;
-  height: 300px;
+  height: 250px;
   background-color: #ddd;
   border-radius: 20px;
   box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.1450980392);
@@ -574,6 +571,21 @@ footer h6 {
   }
   .code-part .code {
     padding: 15px;
+  }
+  .artigos a {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .artigos a .imagem-artigo {
+    width: 100%;
+    height: 225px;
+  }
+  .artigos a .informacoes-artigo {
+    width: 100%;
+    padding: 20px;
+  }
+  .artigos a .informacoes-artigo h4 {
+    font-size: 1.5rem;
   }
 }
 * {
